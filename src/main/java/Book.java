@@ -17,7 +17,7 @@ public class Book extends Media {
     @Override
     public boolean checkOut(String name) {
         if (numberOfCopies > heldBy.size()) {
-            System.out.println("Checking out " + title + ", by " + author);
+            //System.out.println("Checking out " + title + ", by " + author);
             heldBy.add(name);
             return true;
         }
@@ -27,7 +27,7 @@ public class Book extends Media {
     @Override
     public boolean checkIn(String name) {
         if (heldBy.contains(name)) {
-            System.out.println(name + " checking in " + title);
+            //System.out.println(name + " checking in " + title);
             heldBy.remove(name);
             return true;
         }
